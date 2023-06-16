@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
             //  1) Select the section with an id of container without using querySelector.
             const containerSection = document.getElementById('container');
-            // 2) Select the section with an id of container using querySelector.
-            // const queryContainer = document.querySelector('#container');
-            // console.log(queryContainer);
+            console.log(containerSection);
+            // 2) Select the section with an id of container using querySelector
+            const queryContainer = document.querySelector('#container');
+            console.log(queryContainer);
             // 3) Select all of the list items with a class of "second".
             const secondItems = document.getElementsByClassName('second');
             console.log(secondItems);
@@ -37,8 +38,12 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             console.log(greenList);
             // 13) Remove the div with a class of footer.
-            // const getText = containerSection.firstChild;
+            let removeFooter = document.querySelector('.footer');
+            let parent = removeFooter.parentElement;
+            parent.removeChild(removeFooter);
+            console.log(parent);
         })
+
 
 
             //Access children Nodes
