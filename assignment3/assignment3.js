@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
             //  1) Select the section with an id of container without using querySelector.
             const containerSection = document.getElementById('container');
             // 2) Select the section with an id of container using querySelector.
